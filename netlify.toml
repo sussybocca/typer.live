@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  base = "./"
+
+# Ensure that client-side routing (React Router) works correctly
+# This redirects all routes (like /lesson/1) to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional: improve caching for performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

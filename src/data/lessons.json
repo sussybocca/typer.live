@@ -1,5 +1,37 @@
 [
-  { "id": 1, "title": "Home Row", "text": "asdf jkl; asdf jkl;" },
-  { "id": 2, "title": "Easy Words", "text": "cat dog hat log" },
-  { "id": 3, "title": "Sentences", "text": "The quick brown fox jumps over the lazy dog." }
+  {
+    "id": 1,
+    "title": "Home Row",
+    "text": "asdf jkl; asdf jkl; asdf jkl;"
+  },
+  {
+    "id": 2,
+    "title": "Top Row",
+    "text": "qwerty uiop qwerty uiop"
+  },
+  {
+    "id": 3,
+    "title": "Bottom Row",
+    "text": "zxcvbnm mnbvcxz zxcvbnm"
+  },
+  {
+    "id": 4,
+    "title": "Common Words",
+    "text": "the quick brown fox jumps over the lazy dog"
+  },
+  {
+    "id": 5,
+    "title": "Simple Sentences",
+    "text": "I love typing. Practice makes perfect."
+  },
+  {
+    "id": 6,
+    "title": "Paragraph Practice",
+    "text": "Typing is a valuable skill. With consistent practice, your speed and accuracy will improve over time."
+  },
+  {
+    "id": 7,
+    "title": "Custom Challenge",
+    "text": "Try to type this paragraph without looking at the keyboard and avoid mistakes!"
+  }
 ]

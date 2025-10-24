@@ -1,37 +1,277 @@
 [
   {
     "id": 1,
-    "title": "Home Row",
+    "title": "Home Row Basics",
     "text": "asdf jkl; asdf jkl; asdf jkl;"
   },
   {
     "id": 2,
-    "title": "Top Row",
+    "title": "Top Row Basics",
     "text": "qwerty uiop qwerty uiop"
   },
   {
     "id": 3,
-    "title": "Bottom Row",
+    "title": "Bottom Row Basics",
     "text": "zxcvbnm mnbvcxz zxcvbnm"
   },
   {
     "id": 4,
-    "title": "Common Words",
-    "text": "the quick brown fox jumps over the lazy dog"
+    "title": "Left Hand Practice",
+    "text": "asdf qwer zxcv asdf qwer zxcv"
   },
   {
     "id": 5,
-    "title": "Simple Sentences",
-    "text": "I love typing. Practice makes perfect."
+    "title": "Right Hand Practice",
+    "text": "jkl; uiop mnb jkl; uiop mnb"
   },
   {
     "id": 6,
-    "title": "Paragraph Practice",
-    "text": "Typing is a valuable skill. With consistent practice, your speed and accuracy will improve over time."
+    "title": "All Rows Drill",
+    "text": "asdfghjkl qwertyuiop zxcvbnm"
   },
   {
     "id": 7,
-    "title": "Custom Challenge",
+    "title": "Common Words 1",
+    "text": "the quick brown fox jumps over the lazy dog"
+  },
+  {
+    "id": 8,
+    "title": "Common Words 2",
+    "text": "this is a simple typing lesson for practice"
+  },
+  {
+    "id": 9,
+    "title": "Short Sentences 1",
+    "text": "Typing is fun. Practice makes perfect."
+  },
+  {
+    "id": 10,
+    "title": "Short Sentences 2",
+    "text": "I can type fast and accurate with daily training."
+  },
+  {
+    "id": 11,
+    "title": "Basic Punctuation",
+    "text": "Hello, world! Keep typing; stay focused."
+  },
+  {
+    "id": 12,
+    "title": "Numbers Row",
+    "text": "12345 67890 13579 24680"
+  },
+  {
+    "id": 13,
+    "title": "Mixed Practice 1",
+    "text": "qaz wsx edc rfv tgb yhn ujm ik, ol."
+  },
+  {
+    "id": 14,
+    "title": "Mixed Practice 2",
+    "text": "qwert asdfg zxcvb yuiop hjkl n m"
+  },
+  {
+    "id": 15,
+    "title": "Capital Letters",
+    "text": "This Is A Practice Sentence With Capitals."
+  },
+  {
+    "id": 16,
+    "title": "Finger Stretch 1",
+    "text": "az sx dc fv gb hn jm ki lo p;"
+  },
+  {
+    "id": 17,
+    "title": "Finger Stretch 2",
+    "text": "za ws xd ec rf tg yh uj ik ol p;"
+  },
+  {
+    "id": 18,
+    "title": "Word Flow 1",
+    "text": "the rain in spain falls mainly on the plain"
+  },
+  {
+    "id": 19,
+    "title": "Word Flow 2",
+    "text": "every good boy deserves fun and joy"
+  },
+  {
+    "id": 20,
+    "title": "Common Phrases",
+    "text": "thank you for your time see you soon"
+  },
+  {
+    "id": 21,
+    "title": "Speed Drill 1",
+    "text": "as df j k l ; as df j k l ;"
+  },
+  {
+    "id": 22,
+    "title": "Speed Drill 2",
+    "text": "the the the and and and for for for"
+  },
+  {
+    "id": 23,
+    "title": "Easy Paragraph 1",
+    "text": "Typing is a valuable skill that helps in school, work, and daily life. Practice makes you faster and more accurate over time."
+  },
+  {
+    "id": 24,
+    "title": "Easy Paragraph 2",
+    "text": "Focus on hitting the right keys rather than going fast. Accuracy builds a strong foundation for speed later on."
+  },
+  {
+    "id": 25,
+    "title": "Intermediate Words 1",
+    "text": "keyboard monitor computer laptop screen typing practice"
+  },
+  {
+    "id": 26,
+    "title": "Intermediate Words 2",
+    "text": "energy creativity focus patience discipline progress"
+  },
+  {
+    "id": 27,
+    "title": "Numbers Practice",
+    "text": "2024 555 1234 8675309 42 9000 007 31415"
+  },
+  {
+    "id": 28,
+    "title": "Symbols Practice",
+    "text": "! @ # $ % ^ & * ( ) _ + - ="
+  },
+  {
+    "id": 29,
+    "title": "Quotes 1",
+    "text": "The only way to do great work is to love what you do."
+  },
+  {
+    "id": 30,
+    "title": "Quotes 2",
+    "text": "Success is not final; failure is not fatal: it is the courage to continue that counts."
+  },
+  {
+    "id": 31,
+    "title": "Quotes 3",
+    "text": "Practice like you have never won. Perform like you have never lost."
+  },
+  {
+    "id": 32,
+    "title": "Real Sentences 1",
+    "text": "Please email me the report before the end of the day."
+  },
+  {
+    "id": 33,
+    "title": "Real Sentences 2",
+    "text": "Meeting has been scheduled for tomorrow at 10 AM."
+  },
+  {
+    "id": 34,
+    "title": "Email Template 1",
+    "text": "Dear Team, thank you for your hard work this week. Best regards, Manager."
+  },
+  {
+    "id": 35,
+    "title": "Email Template 2",
+    "text": "Hi Alex, hope you are doing well. Let’s catch up soon. Thanks!"
+  },
+  {
+    "id": 36,
+    "title": "Code Practice 1",
+    "text": "function greet() { console.log('Hello, world!'); }"
+  },
+  {
+    "id": 37,
+    "title": "Code Practice 2",
+    "text": "const user = { name: 'John', age: 25 }; console.log(user.name);"
+  },
+  {
+    "id": 38,
+    "title": "Paragraph Practice 1",
+    "text": "Typing consistently each day improves not only speed but also confidence. Focus on smooth, error-free typing for better results."
+  },
+  {
+    "id": 39,
+    "title": "Paragraph Practice 2",
+    "text": "When learning to type, posture and hand placement are key. Keep your wrists relaxed and fingers on the home row."
+  },
+  {
+    "id": 40,
+    "title": "Challenge 1",
     "text": "Try to type this paragraph without looking at the keyboard and avoid mistakes!"
+  },
+  {
+    "id": 41,
+    "title": "Challenge 2",
+    "text": "Speed typing requires accuracy first. Push yourself but keep calm under pressure."
+  },
+  {
+    "id": 42,
+    "title": "Story Practice 1",
+    "text": "Once upon a time, there was a student who wanted to master typing. With daily effort, they achieved their goal."
+  },
+  {
+    "id": 43,
+    "title": "Story Practice 2",
+    "text": "Each day brings new chances to practice and grow. Typing well is just one of those daily wins."
+  },
+  {
+    "id": 44,
+    "title": "Long Practice 1",
+    "text": "Consistency is more powerful than bursts of effort. Even typing for ten minutes a day can make a big difference."
+  },
+  {
+    "id": 45,
+    "title": "Long Practice 2",
+    "text": "Typing is like playing a musical instrument; rhythm, repetition, and muscle memory come together over time."
+  },
+  {
+    "id": 46,
+    "title": "Advanced Paragraph 1",
+    "text": "Efficiency in typing allows you to focus on the content, not the keys. The faster you type, the more naturally you can express ideas."
+  },
+  {
+    "id": 47,
+    "title": "Advanced Paragraph 2",
+    "text": "Master typists maintain a steady pace, minimal errors, and relaxed posture. These are the hallmarks of excellence."
+  },
+  {
+    "id": 48,
+    "title": "Typing Drill Mix 1",
+    "text": "asdf jkl; qaz wsx edc rfv tgb yhn ujm ik, ol."
+  },
+  {
+    "id": 49,
+    "title": "Typing Drill Mix 2",
+    "text": "poiuytrewq lkjhgfdsam nbvcxz zxcvbnmasd"
+  },
+  {
+    "id": 50,
+    "title": "Numbers & Symbols Mix",
+    "text": "1a 2s 3d 4f 5g 6h 7j 8k 9l 0; !@#$%^&*()"
+  },
+  {
+    "id": 51,
+    "title": "Common English Words",
+    "text": "and the is in to of that it on for with"
+  },
+  {
+    "id": 52,
+    "title": "Word Flow 3",
+    "text": "practice patience precision power progress"
+  },
+  {
+    "id": 53,
+    "title": "Final Challenge 1",
+    "text": "Type this text at your top speed without a single mistake. Stay calm, stay focused, and finish strong."
+  },
+  {
+    "id": 54,
+    "title": "Final Challenge 2",
+    "text": "Congratulations! This is your final typing lesson. Keep practicing daily to reach mastery."
+  },
+  {
+    "id": 55,
+    "title": "Freestyle",
+    "text": "Type anything you want here. This space is for free practice and creativity."
   }
 ]

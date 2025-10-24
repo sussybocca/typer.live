@@ -19,20 +19,25 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Typing Lessons</h1>
-      <ul className="space-y-4">
+    <div className="p-8 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-8 text-center">Typing Lessons</h1>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {lessons.map((lesson) => {
           const stat = progress[lesson.id];
           return (
-            <li key={lesson.id} className="border p-4 rounded-lg flex justify-between items-center hover:shadow-md transition">
-              <Link to={`/lesson/${lesson.id}`} className="text-lg font-semibold text-blue-600 hover:underline">
-                {lesson.title}
-              </Link>
-              {stat ? (
-                <span className="text-green-600 font-semibold">✅ Completed</span>
-              ) : (
-                <span className="text-gray-500 font-medium">Not started</span>
+            <li key={lesson.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition">
+              <div>
+                <Link to={`/lesson/${lesson.id}`} className="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+                  {lesson.title}
+                </Link>
+                {stat && (
+                  <p className="text-green-500 font-medium mt-2 text-sm">
+                    ✅ Completed — WPM: {stat.wpm}, Accuracy: {stat.accuracy}%
+                  </p>
+                )}
+              </div>
+              {!stat && (
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">Not started</p>
               )}
             </li>
           );

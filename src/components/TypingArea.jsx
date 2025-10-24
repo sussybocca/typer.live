@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTyping } from '../context/TypingContext';
 import StatsDisplay from './StatsDisplay';
+import localforage from 'localforage';
 
 export default function TypingArea({ lessonId, text }) {
   const { saveProgress, completeLesson } = useTyping();
@@ -30,7 +31,6 @@ export default function TypingArea({ lessonId, text }) {
     if (!startTime) setStartTime(Date.now());
 
     const index = value.length - 1;
-    // Update errors array
     const newErrors = [];
     for (let i = 0; i < value.length; i++) {
       if (value[i] !== text[i]) newErrors.push(i);
@@ -46,7 +46,7 @@ export default function TypingArea({ lessonId, text }) {
     setWpm(Math.round(value.split(' ').length / duration));
     setAccuracy(Math.round((correctChars / value.length) * 100 || 100));
 
-    // Save progress to localforage
+    // Save progress
     saveProgress(lessonId, { input: value, currentIndex: index, errors: newErrors });
 
     // Check completion
@@ -57,24 +57,28 @@ export default function TypingArea({ lessonId, text }) {
   };
 
   return (
-    <div className="flex flex-col gap-4">
-      {/* Lesson text with live highlight */}
-      <p className="text-gray-600 text-lg leading-relaxed">
+    <div className="flex flex-col items-center w-full gap-6">
+      {/* Lesson text */}
+      <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md text-lg leading-relaxed max-w-3xl">
         {text.split('').map((char, i) => (
           <span
             key={i}
             className={
-              i === currentIndex ? 'bg-yellow-200' :
-              errors.includes(i) ? 'text-red-600' : ''
+              i === currentIndex
+                ? 'bg-yellow-300 dark:bg-yellow-500 rounded px-0.5'
+                : errors.includes(i)
+                ? 'text-red-600 dark:text-red-400'
+                : ''
             }
           >
             {char}
           </span>
         ))}
-      </p>
+      </div>
 
+      {/* Typing input */}
       <textarea
-        className="border p-2 rounded-lg h-40 text-lg"
+        className="w-full max-w-3xl h-40 p-4 text-lg rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-600"
         value={input}
         onChange={handleChange}
         placeholder="Start typing..."
@@ -82,11 +86,16 @@ export default function TypingArea({ lessonId, text }) {
       />
 
       {/* Progress bar */}
-      <progress value={currentIndex} max={text.length} className="w-full h-2 rounded bg-gray-200" />
+      <progress
+        value={currentIndex}
+        max={text.length}
+        className="w-full max-w-3xl h-3 rounded bg-gray-300 dark:bg-gray-700"
+      />
 
+      {/* Stats display */}
       <StatsDisplay wpm={wpm} accuracy={accuracy} />
 
-      {completed && <p className="text-green-600 font-semibold">✅ Lesson Complete!</p>}
+      {completed && <p className="text-green-500 font-bold text-lg">✅ Lesson Complete!</p>}
     </div>
   );
 }
